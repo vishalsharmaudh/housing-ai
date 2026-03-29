@@ -43,9 +43,8 @@ housing-price-prediction-ai/
 
 ## 🚀 How to Run Locally
 
-1️⃣ Clone the repository:
-
 ```bash
+1️⃣ Clone the repository:
 git clone https://github.com/vishalsharmaudh/housing-ai.git
 cd housing-ai
 
