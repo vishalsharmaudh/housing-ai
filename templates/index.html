@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Housing AI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🏠 Housing Price Predictor</h1>
+
+    <div class="card">
+
+        <input id="longitude" placeholder="Longitude">
+        <input id="latitude" placeholder="Latitude">
+        <input id="housing_median_age" placeholder="House Age">
+        <input id="total_rooms" placeholder="Total Rooms">
+        <input id="total_bedrooms" placeholder="Bedrooms">
+        <input id="population" placeholder="Population">
+        <input id="households" placeholder="Households">
+        <input id="median_income" placeholder="Median Income">
+
+        <select id="ocean_proximity">
+            <option value="<1H OCEAN"><1H OCEAN</option>
+            <option value="INLAND">INLAND</option>
+            <option value="ISLAND">ISLAND</option>
+            <option value="NEAR BAY">NEAR BAY</option>
+            <option value="NEAR OCEAN">NEAR OCEAN</option>
+        </select>
+
+        <button onclick="predict()">Predict Price 🚀</button>
+
+        <button onclick="resetForm()" class="reset-btn">Reset 🔄</button>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span onclick="closeModal()" class="close">❌</span>
+        <h2>Estimated Price</h2>
+        <p id="price"></p>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
